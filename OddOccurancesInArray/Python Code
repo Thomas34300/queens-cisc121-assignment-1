@@ -1,0 +1,9 @@
+def solution(A):
+    counts = {}
+
+    for num in A:
+        counts[num] = counts.get(num, 0) + 1
+
+    for num, count in counts.items():
+        if count % 2 == 1:
+            return num
