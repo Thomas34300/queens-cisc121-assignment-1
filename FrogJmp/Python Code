@@ -1,0 +1,4 @@
+def solution(X, Y, D):
+    displacement = Y - X
+
+    return -(-displacement // D)
